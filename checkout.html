@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>checkout</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+   <header class="header">
+
+      <section class="flex">
+   
+         <a href="home.html" class="logo"><i class="fas fa-shopping-basket"></i> SETARA</a>
+   
+         <nav class="navbar">
+            <a href="home.html">Beranda</a>
+            <a href="about.html">Tentang Kami</a>
+            <a href="menu.html">Menu</a>
+            <a href="orders.html">Pesanan</a>
+         </nav>
+   
+         <div class="icons">
+            <a href="search.html"><i class="fas fa-search"></i></a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i><span>(3)</span></a>
+            <div id="user-btn" class="fas fa-user"></div>
+            <div id="menu-btn" class="fas fa-bars"></div>
+         </div>
+   
+         <div class="profile">
+            <p class="name">Arnetha</p>
+            <div class="flex">
+               <a href="profile.html" class="btn">Profil</a>
+               <a href="#" class="delete-btn">Keluar</a>
+            </div>
+            <p class="account"><a href="login.html">Masuk</a> atau <a href="register.html">Daftar</a></p>
+         </div>
+   
+      </section>
+   
+   </header>
+
+<div class="heading">
+   <h3>checkout</h3>
+   <p><a href="home.html">Beranda </a> <span> / checkout</span></p>
+</div>
+
+<section class="checkout">
+
+   <!-- <h1 class="title">order summary</h1> -->
+
+   <form action="" method="post">
+      <div class="cart-items">
+         <h3>Item Keranjang</h3>
+         <p><span class="name">Pelecing Kangkung</span><span class="price">10K</span></p>
+         <p><span class="name">Rawon</span><span class="price">35K</span></p>
+         <p><span class="name">Es Jeruk</span><span class="price">5K</span></p>
+         <p class="grand-total"><span class="name">Total :</span> <span class="price">50K</span></p>
+         <a href="cart.html" class="btn">Lihat Keranjang</a>
+      </div>
+      <div class="user-info">
+         <h3>Informasi Anda</h3>
+         <p><i class="fas fa-user"></i> <span>Baiqisratullah</span></p>
+         <p><i class="fas fa-phone"></i> <span>087863350443</span></p>
+         <p><i class="fas fa-envelope"></i> <span>baiqisra97@gmail.com</span></p>
+         <a href="update_profile.html" class="btn">Perbarui</a>
+         <h3>Alamat</h3>
+         <p class="address"><i class="fas fa-map-marker-alt"></i> <span>Lombok, Indonesia - 400104</span></p>
+         <a href="update_address.html" class="btn">Perbarui</a>
+         <select name="method" class="box" required>
+            <option value="" disabled selected>Pilih Metode Pembayaran</option>
+            <option value="cash on delivery">COD</option>
+            <option value="credit card">Kartu Kredit</option>
+            <option value="Dana">Dana</option>
+            <!-- <option value="paypal">paypal</option> -->
+         </select>
+      </div>
+      <input type="submit" value="Pesan" name="order" class="btn order-btn">
+   </form>
+
+</section>
+
+<footer class="footer">
+   <h1 class="title">Informasi</h1>
+   <section class="box-container">
+
+      <div class="box">
+         <img src="images/email-icon.png" alt="">
+         <h3>Email</h3>
+         <a href="mailto:baiqisra97@gmail.com">baiqisra97@gmail.com</a>
+         <a href="mailto:ratu9@gmail.com">ratu9@gmail.com</a>
+      </div>
+
+      <div class="box">
+         <img src="images/clock-icon.png" alt="">
+         <h3>Jam Operasi</h3>
+         <p>08.00 - 22:00pm </p>
+      </div>
+
+      <div class="box">
+         <img src="images/map-icon.png" alt="">
+         <h3>Alamat</h3>
+         <a href="https://www.google.com/maps">
+            Lombok, Indonesia</a>
+      </div>
+
+      <div class="box">
+         <img src="images/phone-icon.png" alt="">
+         <h3>Kontak</h3>
+         <a href="tel:1234567890">+62-87863350443</a>
+         <a href="tel:1112223333">+62-87864351278</a>
+      </div>
+
+   </section>
+
+</footer>
+
+<div class="loader">
+   <img src="images/loader.gif" alt="">
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
